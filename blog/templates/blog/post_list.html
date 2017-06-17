@@ -3,12 +3,24 @@
 <title>♀♀♀</title>
 </head>
 <body>
-	<p></p>
+	<div><p></p>
 	<p><center>░░(҉˘.˘)~҉░░
 	<br>(҉˘.˘)~҉░<img src="http://tonygifsjavas.com.br/galeria_gifs_animes/beijos/images/beijo_56.gif">░(҉˘.˘)~҉
 	<br><big>
 	ᶠᵘᶜᵏᵧₒᵤ
-	<br>
-	</center></p>
+	<br></big>
+	</center></p></div>
+
+	<div><center> oioi</div>
+	<center>
+	{% for post in posts %}
+	<div>
+	<p>published: {{ post.published_date }}</p>
+	<h1><a href="">{{ post.title }}</a></h1>
+	<p>{{ post.text|linebreaksbr }}</p>
+	</div>
+	{% endfor %}
+
+</center>
 	</body>
 	</html>
